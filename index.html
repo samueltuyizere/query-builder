@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class='flex min-h-screen items-center justify-center min-h-screen w-full'>
+    <div class="flex items-center justify-center min-h-[450px] py-4 px-8 mx-10">
+
+        <div class="overflow-x-auto relativ sm:rounded-lg">
+            <div class="flex items-center justify-center min-h-[450px]">
+        <div>
+  <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-900">Select a Database</label>
+  <div class="relative mt-2 py-2 mx-5 ">
+    <button type="button" class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+      <span class="flex items-center">
+        <span class="ml-3 block truncate">Test DB</span>
+      </span>
+      <span class="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
+        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+    </div>
+    <!-- Queries selector -->
+<div class="align-center justify-center grid grid-cols-4 grid-flow-col gap-2 mx-5 py-5">
+    <div>
+<select id="countries" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+  <option selected></option>
+  <option value="SELECT">SELECT</option>
+  <option value="FROM">FROM</option>
+  <option value="WHERE">WHERE</option>
+  <option value="INSERT INTO">INSERT INTO</option>
+  <option value="UPDATE">UPDATE</option>
+  <option value="DELETE FROM">DELETE FROM</option>
+  <option value="CREATE TABLE">CREATE TABLE</option>
+  <option value="ALTER TABLE">ALTER TABLE</option>
+  <option value="DROP TABLE">DROP TABLE</option>
+  <option value="JOIN">JOIN</option>
+  <option value="GROUP BY">GROUP BY</option>
+  <option value="HAVING">HAVING</option>
+  <option value="ORDER BY">ORDER BY</option>
+  <option value="DISTINCT">DISTINCT</option>
+</select>
+    </div>
+    <div>
+<select id="countries" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+  <option selected></option>
+  <option value="SELECT">SELECT</option>
+  <option value="FROM">FROM</option>
+  <option value="WHERE">WHERE</option>
+  <option value="INSERT INTO">INSERT INTO</option>
+  <option value="UPDATE">UPDATE</option>
+  <option value="DELETE FROM">DELETE FROM</option>
+  <option value="CREATE TABLE">CREATE TABLE</option>
+  <option value="ALTER TABLE">ALTER TABLE</option>
+  <option value="DROP TABLE">DROP TABLE</option>
+  <option value="JOIN">JOIN</option>
+  <option value="GROUP BY">GROUP BY</option>
+  <option value="HAVING">HAVING</option>
+  <option value="ORDER BY">ORDER BY</option>
+  <option value="DISTINCT">DISTINCT</option>
+</select>
+    </div>
+    <div>
+<select id="countries" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+  <option selected></option>
+  <option value="SELECT">SELECT</option>
+  <option value="FROM">FROM</option>
+  <option value="WHERE">WHERE</option>
+  <option value="INSERT INTO">INSERT INTO</option>
+  <option value="UPDATE">UPDATE</option>
+  <option value="DELETE FROM">DELETE FROM</option>
+  <option value="CREATE TABLE">CREATE TABLE</option>
+  <option value="ALTER TABLE">ALTER TABLE</option>
+  <option value="DROP TABLE">DROP TABLE</option>
+  <option value="JOIN">JOIN</option>
+  <option value="GROUP BY">GROUP BY</option>
+  <option value="HAVING">HAVING</option>
+  <option value="ORDER BY">ORDER BY</option>
+  <option value="DISTINCT">DISTINCT</option>
+</select>
+    </div>
+    <div>
+<select id="countries" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+  <option selected></option>
+  <option value="SELECT">SELECT</option>
+  <option value="FROM">FROM</option>
+  <option value="WHERE">WHERE</option>
+  <option value="INSERT INTO">INSERT INTO</option>
+  <option value="UPDATE">UPDATE</option>
+  <option value="DELETE FROM">DELETE FROM</option>
+  <option value="CREATE TABLE">CREATE TABLE</option>
+  <option value="ALTER TABLE">ALTER TABLE</option>
+  <option value="DROP TABLE">DROP TABLE</option>
+  <option value="JOIN">JOIN</option>
+  <option value="GROUP BY">GROUP BY</option>
+  <option value="HAVING">HAVING</option>
+  <option value="ORDER BY">ORDER BY</option>
+  <option value="DISTINCT">DISTINCT</option>
+</select>
+    </div>
+    <div>
+            <button type="button" class="block p-2.5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">+</button>
+    </div>
+
+</div>
+
+<div>
+    <button type="button" class="align-center justify-center mx-5 w-4/5  py-2.5 px-5 bg-gray-400 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">RUN QUERY</button>
+</div>
+
+</div>
+</div>
+</body>
+</html>
